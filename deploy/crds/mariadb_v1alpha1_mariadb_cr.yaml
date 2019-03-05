@@ -1,0 +1,10 @@
+apiVersion: mariadb.kfj.io/v1alpha1
+kind: MariaDB
+metadata:
+  name: example-mariadb
+spec:
+  mysql_database: test_database
+  mysql_username: test_user
+  mysql_password: test_password
+  persistent_volume: mariadb-data
+  size: 3
